@@ -4,13 +4,13 @@ The following UML diagrams explains  the processes and the roles in this project
 
 
 **data Diagram**
-![truffle test](images/1.pdf)
+![truffle test](images/d2.png)
 
 **activity Diagram**
-![truffle test](images/2.pdf)
+![truffle test](images/d1.png)
 
 **Sequence Diagram**
-![truffle test](images/3.pdf)
+![truffle test](images/d3.png)
 
 **state Diagram**
 ![truffle test](images/state_diagram.png)
