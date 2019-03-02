@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cookie store</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Online Cookie Store</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of Cookies using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-harvest">
+        <h2>Product Overview</h2>
+        <div class="form-group">
+            SKU
+            <br>
+            <input class="input-field" type="number" id="sku" name="sku" value=1><br>
+            UPC
+            <br>
+            <input type="number" id="upc" name="upc" value=1><br>
+            Current Owner ID
+            <br>
+            <input type="text" id="ownerID" name="ownerID" value="0x854AEA2dF207be01a0808c95468a37F2231290c9" size="50"><br>
+            <div class=button-div>
+                <button class="btn-fetchOne" id="button" type="button" data-id="9">Fetch Data 1</button>
+                <button class="btn-fetchTwo" id="button" type="button" data-id="10">Fetch Data 2</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Baker Details</h2>
+        <div class="form-group">
+            Baker ID
+            <br>
+            <input type="text" id="originBakerID" name="originBakerID" value="0x854AEA2dF207be01a0808c95468a37F2231290c9"
+                size="50"><br>
+            Baker Name
+            <br>
+            <input type="text" id="originBakerName" name="originBakerName" value="Meshal Alhazmi"><br>
+            Baker Information
+            <br>
+            <input type="text" id="originBakerInformation" name="originBakerInformation" value="organic cookies"><br>
+            
+            <br>
+            <button class="btn-harvest" id="button" type="button" data-id="1">Bake</button>
+            <button class="btn-process" id="button" type="button" data-id="2">add to store</button>
+          </div>
+        <div class=form-break></div>
+        <h2>Product Details</h2>
+        <div class="form-group">
+            Product Notes
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="Best Double chocolate cookies" size="60"><br>
+            Product Price
+            <br>
+            <input type="number" id="productPrice" name="productPrice" value=20>ETH<br>
+            Delivery Agnet ID
+            <br>
+            <input type="text" id="distributorID" name="distributorID" value="0x854AEA2dF207be01a0808c95468a37F2231290c9"
+                size="50">
+            <br>
+            
+            Consumer ID 
+            <br>
+            <input type="text" id="consumerID" name="consumerID" value="0x627306090abaB3A6e1400e9345bC60c78a8BEf57"
+                size="50"><br>
+            <br>
+            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
+            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
+            <button class="btn-purchase" id="button" type="button" data-id="8">Deliver</button>
+            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
+        </div>
+        <div class=form-break></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
